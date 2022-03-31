@@ -28,7 +28,7 @@ while True:
 
             lmlist = hands[0]['lmList']
             
-            #finger==['thumb','index finger','middel finger','ring finger','little finger']
+            #finger==['thumb','index finger','middle finger','ring finger','little finger']
             # thumb =  1 -> closed
             # thumb =0 -> open
             if lmlist[4][0] > lmlist[8][0] and fingers == [1, 0, 0, 0, 0]:  # all Fingers closed
@@ -37,29 +37,29 @@ while True:
             if fingers == [1, 1, 0, 0, 0]:  # index finger
                 numbers = 1
 
-            if fingers == [1, 1, 1, 0, 0]:  # index finger & middel finger
+            if fingers == [1, 1, 1, 0, 0]:  # index finger & middle finger
                 numbers = 2
 
-            if fingers == [0, 1, 1, 0, 0]:  # thumb & index finger & middel finger
+            if fingers == [0, 1, 1, 0, 0]:  # thumb & index finger & middle finger
                 numbers = 3
 
-            # index finger & middel finger & ring finger & little finger
+            # index finger & middle finger & ring finger & little finger
             if fingers == [1, 1, 1, 1, 1]:
                 numbers = 4
 
             if fingers == [0, 1, 1, 1, 1]:  # all fingers open
                 numbers = 5
 
-            if fingers == [1, 1, 1, 1, 0]:  # index finger & middel finger & ring finger
+            if fingers == [1, 1, 1, 1, 0]:  # index finger & middle finger & ring finger
                 numbers = 6
 
-            if fingers == [1, 1, 1, 0, 1]:  # index finger & middel finger & little finger
+            if fingers == [1, 1, 1, 0, 1]:  # index finger & middle finger & little finger
                 numbers = 7
 
             if fingers == [1, 1, 0, 1, 1]:  # index finger & ring finger & little finger
                 numbers = 8
 
-            if fingers == [1, 0, 1, 1, 1]:  # middel finger & ring finger & little finger
+            if fingers == [1, 0, 1, 1, 1]:  # middle finger & ring finger & little finger
                 numbers = 9
 
             if  lmlist[4][1]< lmlist[3][1] < lmlist[6][1]:  # thumb
